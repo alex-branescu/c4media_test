@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * Implements hook_views_api().
+ */
+function c4media_test_views_api() {
+  return array(
+    'api' => 3,
+    'path' => drupal_get_path('module', 'c4media_test') . '/views',
+  );
+}
+
+/**
+ * Implements hook_ctools_plugin_directory().
+ */
+function c4media_test_ctools_plugin_directory($owner, $plugin_type) {
+  if ($owner == 'ctools' && $plugin_type == 'content_types') {
+    return 'plugins/' . $plugin_type;
+  }
+}

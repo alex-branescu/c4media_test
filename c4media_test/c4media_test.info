@@ -1,0 +1,9 @@
+name = C4Media Test
+description = C4Media Drupal Developer Test Module
+package = C4Media Test
+dependencies[] = views
+dependencies[] = panels
+dependencies[] = features
+core = 7.x
+
+version = "7.x-1.0"
